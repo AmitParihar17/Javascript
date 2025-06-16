@@ -1,1 +1,0 @@
- console.log(Math.min(23,44,54,1));
