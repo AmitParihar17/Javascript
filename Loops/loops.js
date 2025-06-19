@@ -72,23 +72,125 @@
 //     }
 // }
 
-let pr = prompt("Enter a number");
-if (pr === null) {
-    console.log("Cancelled");
-} else{
-    const num = Number(pr)
-    if(isNaN(num)){
-        console.log("Invalid Number");
-    }
+// let pr = prompt("Enter a number");
+// if (pr === null) {
+//     console.log("Cancelled");
+// } else{
+//     const num = Number(pr)
+//     if(isNaN(num)){
+//         console.log("Invalid Number");
+//     }
     
-    if(num > 0  || num === 0){
-        let sum = 1 ;
-        for(let i = num ; i>1 ; i--){
-            sum = sum * i
-        }
-        console.log(`Factorial of ${num} is ${sum}`)
-    } else if(num < 0){
-        console.log("Number should be positive");
+//     if(num > 0  || num === 0){
+//         let sum = 1 ;
+//         for(let i = num ; i>1 ; i--){
+//             sum = sum * i
+//         }
+//         console.log(`Factorial of ${num} is ${sum}`)
+//     } else if(num < 0){
+//         console.log("Number should be positive");
         
-    }
+//     }
+// }
+
+// Factors of a number
+
+// const num = 12;
+
+// for(let i= 1; i<=num/2; i++){
+//     if( num % i === 0) {
+//         console.log("these are the factors of",i);
+//     }
+// }
+
+
+// const num = 12;
+
+// for(let i =1;i<=num/2; i++){
+//     if (num % i === 0) {
+//         console.log(`factor of num is ${i}`);
+//     }
+// }
+// console.log(`factors of num is ${num}`);
+
+
+
+// optimize way
+// const num = Math.floor(Number(prompt("Enter a number")));
+
+// if(isNaN(num)){
+//     console.log('Invalid input');
+// }
+// else {
+//     if( num > 0){
+
+//         for(let i = 1 ; i<=Math.floor(num/2) ; i++){
+//                 if (num % i === 0) {
+//                     console.log("Fatctors of ",num,"is",i); 
+//                 }
+//         }
+//         console.log("Fatctors of ",num,"is",num)
+        
+//     } else{
+//         console.log("Number should be positive or greater than 0");
+        
+//     }
+// }
+
+
+//prime no
+
+// let pr =Math.floor(Number(prompt("Entr a number")))
+//  if(isNaN(pr)){
+//     console.log("invalid");
+//  } else{
+//     if (pr  > 0) {
+//         let isPrime = true
+//         for(let i = 2;i<=Math.floor(pr/2);i++){
+//             if (pr % i === 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         console.log(isPrime);
+        
+//     } else{
+//         console.log("Number should be +ve or > 0");
+        
+//     }
+//  }
+
+
+// function isPrime(num){ //12
+//     if(num <=1) return false;
+//     if(num === 2) return true;
+//     if(num % 2 == 0) return false;
+//     for(let i = 3; i<=Math.floor(Math.sqrt(num));i+=2){
+//         if(num % i == 0) return false
+//     }
+//     return true
+// }
+
+// console.log(isPrime(9));
+
+
+// for(let i= 1; i <23 ;i++){
+//     if (i=== 11) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+
+// start;
+// while(end){
+//     // code 
+//     change;
+// }
+
+
+let i = 1;
+while(i<22){
+    console.log(i);
+    i+=2;
 }
