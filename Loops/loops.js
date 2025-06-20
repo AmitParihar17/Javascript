@@ -189,8 +189,40 @@
 // }
 
 
-let i = 1;
-while(i<22){
-    console.log(i);
-    i+=2;
+// let i = 1;
+// while(i<22){
+//     console.log(i);
+//     i+=2;
+// }/
+
+
+// sum of digit  while loop
+
+// let num = 1234;
+// console.log(num);
+
+// if (num > 0) {
+//   let sum = 0;
+//   while (num > 0) {
+//     let rem = num % 10;
+//     sum += rem;
+//    num = Math.floor(num / 10);
+//   }
+//   console.log(sum);
+// } else {
+//   console.log("Number should be positive or greater then 0");
+// }
+
+let num = 12345;
+if (num <= 0) {
+  console.log("Number should be +ve or > 0");
+} else {
+  let rev = 0
+  while(num > 0){
+     let rem = num % 10;
+       rev =  rev * 10 + rem;
+     num = Math.floor(num/10)
+  }
+  console.log(rev);
+  
 }
