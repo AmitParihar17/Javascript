@@ -212,17 +212,51 @@
 // } else {
 //   console.log("Number should be positive or greater then 0");
 // }
+ 
+// Strong Number
 
-let num = 12345;
-if (num <= 0) {
-  console.log("Number should be +ve or > 0");
-} else {
-  let rev = 0
-  while(num > 0){
-     let rem = num % 10;
-       rev =  rev * 10 + rem;
-     num = Math.floor(num/10)
-  }
-  console.log(rev);
-  
+//  let num = 146;
+//  if (num < 0) {
+//     console.log("Number should be positive or more then 0");
+//  } else{
+//     let numCopy = num
+//  let sum = 0
+//      while(num > 0){
+//         let fact = 1;
+//       let rem = num % 10
+//     for(let i = 1;i<=rem ;i++){
+//      fact = fact * i;
+//     }
+//     sum += fact
+//      num = Math.floor(num/10)
+//      }
+//      console.log(num,sum,"is total sum after factorial of ",numCopy," your input is ->",numCopy);
+//      if(sum === numCopy){
+//         console.log(numCopy+ " is a Strong number");
+//      }
+//      else{
+//         console.log(numCopy ," is Not a Strong number");
+        
+//      }
+     
+//  }
+
+let randomNumber = Math.floor(Math.random() * 100) + 1 ;
+console.log(randomNumber);
+
+let guessNumber = 0;
+while(guessNumber !== randomNumber){
+    guessNumber = Number(prompt("Guess a Number"))
+    if(isNaN(guessNumber) || guessNumber < 1 || guessNumber > 100){
+        console.log("Try again b/w 1 to 100");
+        continue
+    }
+    if (guessNumber > randomNumber) {
+            console.log("Too high");         
+    } else if (guessNumber < randomNumber){
+        console.log("Too low , try again");
+    } else{
+        console.log("Conrats 👌🫡 number was🥳🎉",randomNumber);
+        
+    }
 }
