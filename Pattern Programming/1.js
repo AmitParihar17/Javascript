@@ -41,13 +41,75 @@ let prompt = require('prompt-sync')()
 
 // rat with Alphabet
 
-let num = Number(prompt("Enter a number -> "))
-for(let i = 1;i<=num ;i++){
-    let ascii = 65;
-    for(let j= 1;j<=i;j++){
-        process.stdout.write(String.fromCharCode(ascii) + "")
-        ascii++;
+// let num = Number(prompt("Enter a number -> "))
+// for(let i = 1;i<=num ;i++){
+//     let ascii = 65;
+//     for(let j= 1;j<=i;j++){
+//         process.stdout.write(String.fromCharCode(ascii) + "")
+//         ascii++;
+//     }
+//         console.log(); 
+// }
+
+// let num = Number(prompt("Enter a number-> "))
+// for(let i = num;i > 0;i--){
+//         for(let j=1;j<=i;j++){
+//             process.stdout.write("* ")
+//         }
+//         console.log();      
+// }
+
+// let num = Number(prompt("Enter a number -> "))
+// for(let i = 1; i<=num; i++){
+//     for(let j= 1;j<=num-i + 1;j++){
+//     process.stdout.write("* ")       
+//     }
+//     console.log();  
+// }
+
+// let num = Number(prompt("Enter a number -> "));
+// for(let i = 1; i<=num; i++){
+//     for(let j= num;j>=i;j--){
+//     process.stdout.write("* ")       
+//     }
+//     console.log();  
+// }
+
+// let num = Number(prompt("Enter a number -> "))
+// for(let i = 1;i<=num;i++){
+//     for(let j= 1;j<=num-i;j++){
+//         process.stdout.write("  ")
+//     }
+//     for(let j= 1;j<=i;j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log();   
+// }
+
+// let num = Number(prompt("Enter a number -> "))
+// for(let i =1 ;i<=num;i++){
+//     for(let j=1;j<=num;j++){
+//         if(i==j || i+j == num+1){
+//      process.stdout.write("*")
+//         } else{
+//             process.stdout.write(" ");
+//         }
+//     }
+//     console.log();
+    
+// }
+
+let num = Number(prompt("Enter a number->"))
+for(let i = 1;i<=num;i++){
+    for(let j= 1;j<=2*num-1;j++){
+        if(i==j || i+j == 2*num){
+            process.stdout.write("*")
+        } else{
+            process.stdout.write(" ");
+        }
     }
-        console.log();
-        
+    console.log();
+    
 }
+
+
