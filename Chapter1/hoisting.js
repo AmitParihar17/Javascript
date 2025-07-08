@@ -58,3 +58,16 @@
 //   counter2(); // 2
 //   counter1(); // 3
 
+//  Syncronous
+
+// console.log(2);
+// console.log(4);
+// console.log(1);
+
+// // Asyncronous
+
+// console.log(2);
+// setTimeout(() => {
+//     console.log("async",3);
+// },1000)
+// console.log(1);
